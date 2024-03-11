@@ -1,25 +1,28 @@
-import java.util.Scanner;
-
 public class ExpenseTracker {
-    private float expense;
+    private Expense _head;
+    private Expense _tail;
+    
 
-
-    public void setExpense()
+    public void AddExpense()
     {
-        try (Scanner myObj = new Scanner(System.in)) {
-            System.out.print("Enter expense: ");
-
-            String userInput = myObj.nextLine();  // Read user input
-            expense = Float.parseFloat(userInput);
-        } catch (NumberFormatException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+        Expense new_Expense = new Expense();
+        if (_head == null){
+            _head = new_Expense;
+            _tail = new_Expense;
+        }
+        else{
+            _tail.next = new_Expense;
+            _tail.next.privious = _tail;
+            _tail = new_Expense;
+        }
+    }      
+    
+    public void display_expenses(){
+        Expense current = _head;
+        while (current != null) {
+            System.out.println(current.get_amount());
+            current = current.next;
         }
     }
-
-    public float getExpense(){
-        return expense;
-    }
-        
     
 }
