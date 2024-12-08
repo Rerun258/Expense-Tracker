@@ -3,33 +3,17 @@ simple java program to learn java making a simple expense tracker
 
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+This is a simple expense tracker used to keep track of what you spent and where you spent your money. 
+This is a command line project to help facilitate my learning of the Java language. 
 
-{Provide a description of the software that you wrote to demonstrate the Java language.}
-
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+When running the program it prompts 3 things. Add and expense, display expenses and quit
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
-
-# Useful Websites
-
-{Make a list of websites that you found helpful in this project}
-
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+I used Microsofts Visual Studio Code
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- there is currently a bug with the scanner reading the string when asking for the place
+- It would be fun to learn how to make this a user friendly app using a GUI
+- When Quiting the program it needs to have a function to save expenese to the file as well as reading when starting.
